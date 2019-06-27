@@ -33,7 +33,7 @@ def on_message(client, userdata, message):
     print("{} {} ".format(message.topic, data))
     min_value=data["min"]
     max_value=data["max"]
-    threshold_value=(max_value-min_value)*0.5 + min_value
+    threshold_value=(max_value-min_value)*0.8 + min_value
     check_alert(data["Sensor"], data["value"], threshold_value, message.topic)
 
 if __name__ == '__main__':

@@ -1,0 +1,31 @@
+{
+    "mqtt": {
+        "host": "broker.hivemq.com",
+        "port": 1883,
+        "topic": "sensor_data"
+    },
+    "misc": {
+        "interval_ms": 1000,
+        "verbose": true
+    },
+    "sensors": {
+        "Thermistor": {
+            "unit": "C",
+            "type": "Temperature",
+            "range": [22, 28],
+            "description": "Main Entrance"
+        },
+        "HS_1101": {
+            "unit": "RH",
+            "type": "Humidity",
+            "range": [0, 100],
+            "description": "Microvave"
+        },
+        "BMP280": {
+            "unit": "hPa",
+            "type": "Pressure",
+            "range": [300, 1000],
+            "description": "used in watches, flying toys"
+        }
+    }
+}
